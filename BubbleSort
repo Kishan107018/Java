@@ -13,8 +13,6 @@ public class SimpleBubbleSort {
         int arr[]=new int[size];
 
         System.out.println("Enter the array value:");
-
-        //Take user input
         for(int i=0;i<size;i++)
         {
             arr[i]=s.nextInt();
@@ -22,7 +20,7 @@ public class SimpleBubbleSort {
 
         for(int i=0;i<size-1;i++)
         {
-            for(int j=0;j<size-1;j++)      //Here if we write thr j<size-i-1 ,so the 
+            for(int j=0;j<size-i-1;j++)      //Here if we write thr j<size-i-1 ,so the 
             {                              //number of comparison should decrease 
                 if(arr[j]>arr[j+1])
                 {
@@ -34,7 +32,7 @@ public class SimpleBubbleSort {
         }
 
         System.out.println("The sorted output");
-        //to print the sorted array
+    
         for(int i=0;i<size;i++)
         {
             System.out.print(arr[i]+" ");
